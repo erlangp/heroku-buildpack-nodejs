@@ -236,8 +236,8 @@ npm install sqlite3 -g
 wget http://download.redis.io/redis-stable.tar.gz
 tar xvzf redis-stable.tar.gz
 cd redis-stable
-make
-make install
+make 
+make PREFIX=$BUILD_DIR/myredis install
 
 header "Build succeeded!"
 mcount "compile"
