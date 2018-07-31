@@ -1,4 +1,4 @@
-### Heroku Buildpack for Node.js (modified)
+### (modified) Heroku Buildpack for Node.js 
 
 Included:
 - SQLite (npm)
