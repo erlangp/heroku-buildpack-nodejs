@@ -296,12 +296,20 @@ cd $BUILD_DIR
 npm install --save sqlite3
 
 # Install Redis
+cd $BUILD_DIR
 wget http://download.redis.io/releases/redis-4.0.10.tar.gz
 tar xzf redis-4.0.10.tar.gz
 cd redis-4.0.10
 make
 make PREFIX=$BUILD_DIR/redis install
 export PATH=$PATH:/app/redis/bin
+
+cd $BUILD_DIR
+git clone https://github.com/nicolasff/webdis.git
+cd webdis
+make
+
+cd $BUILD_DIR
 
 header "Build succeeded!"
 mcount "compile"
