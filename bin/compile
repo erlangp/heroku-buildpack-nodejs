@@ -299,7 +299,6 @@ make PREFIX=$BUILD_DIR/redis install
 export PATH=$PATH:/app/redis/bin
 
 cd $BUILD_DIR
-rm -R webdis
 git clone https://github.com/nicolasff/webdis.git
 cd webdis
 make
