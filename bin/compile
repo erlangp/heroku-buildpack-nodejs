@@ -230,14 +230,16 @@ summarize_build() {
   mmeasure 'modules.size' "$(measure_size)"
 }
 
-# Install SQLite
-npm install sqlite3 -g
-
-wget http://download.redis.io/redis-stable.tar.gz
-tar xvzf redis-stable.tar.gz
-cd redis-stable
+# Install Redis
+wget http://download.redis.io/releases/redis-3.2.12.tar.gz
+tar xvzf redis-3.2.12.tar.gz
+cd redis-3.2.12
 make 
 make PREFIX=$BUILD_DIR/myredis install
+
+# Install SQLite
+cd $BUILD_DIR
+npm install --save sqlite3
 
 header "Build succeeded!"
 mcount "compile"
