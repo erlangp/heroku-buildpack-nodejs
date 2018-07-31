@@ -235,11 +235,18 @@ wget http://download.redis.io/releases/redis-3.2.12.tar.gz
 tar xvzf redis-3.2.12.tar.gz
 cd redis-3.2.12
 make 
-make PREFIX=$BUILD_DIR/myredis install
+make PREFIX=$BUILD_DIR/redis install
+export PATH=$PATH:/app/redis/bin
 
 # Install SQLite
 cd $BUILD_DIR
 npm install --save sqlite3
+
+# Install VIM
+cd $BUILD_DIR
+curl https://s3.amazonaws.com/heroku-jvm-buildpack-vi/vim-7.3.tar.gz --output vim.tar.gz
+mkdir vim && tar xzvf vim.tar.gz -C vim
+export PATH=$PATH:/app/vim/bin
 
 header "Build succeeded!"
 mcount "compile"
