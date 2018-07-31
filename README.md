@@ -1,6 +1,6 @@
 ### (modified) Heroku Buildpack for Node.js 
 
-Included:
+will install:
 - SQLite (npm)
 - Redis
 - Vim
