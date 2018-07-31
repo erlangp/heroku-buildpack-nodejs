@@ -1,7 +1,7 @@
 # Heroku Buildpack for Node.js
 
 Included:
-- SQLite
+- SQLite (npm)
 - Redis
 - VIM
 - Busybox
