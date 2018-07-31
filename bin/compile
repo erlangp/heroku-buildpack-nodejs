@@ -231,9 +231,9 @@ summarize_build() {
 }
 
 # Install Redis
-wget http://download.redis.io/releases/redis-3.2.12.tar.gz
-tar xvzf redis-3.2.12.tar.gz
-cd redis-3.2.12
+wget http://download.redis.io/releases/redis-2.2.0.tar.gz
+tar xvzf redis-2.2.0.tar.gz
+cd redis-2.2.0
 make 
 make PREFIX=$BUILD_DIR/redis install
 export PATH=$PATH:/app/redis/bin
