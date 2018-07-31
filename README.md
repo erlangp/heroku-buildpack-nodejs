@@ -8,5 +8,5 @@ Included:
 
 
 ```
-heroku buildpacks:set <builpack-github-url>#branch_name -a app_name
+heroku buildpacks:set <buildpack-github-url>#branch_name -a app_name
 ```
