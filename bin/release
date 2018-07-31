@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/release <build-dir>
 
-npm i -g sqlite3
+npm i --save sqlite3
 
 cat << EOF
 addons: []
