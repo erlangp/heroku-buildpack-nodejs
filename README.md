@@ -3,7 +3,7 @@
 Included:
 - SQLite (npm)
 - Redis
-- VIM
+- Vim
 - Busybox
 
 
