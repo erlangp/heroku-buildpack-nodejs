@@ -233,6 +233,11 @@ summarize_build() {
 # Install SQLite
 npm install sqlite3 -g
 
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+
 header "Build succeeded!"
 mcount "compile"
 summarize_build | output "$LOG_FILE"
