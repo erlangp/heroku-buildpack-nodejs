@@ -6,10 +6,7 @@ Included:
 - VIM
 - Busybox
 
-```
-heroku buildpacks:set https://github.com/heroku/heroku-buildpack-nodejs#v83 -a my-app
-```
 
 ```
-heroku buildpacks:set <your-github-url>#your-branch
+heroku buildpacks:set <builpack-github-url>#branch_name -a app_name
 ```
