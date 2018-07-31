@@ -231,7 +231,7 @@ summarize_build() {
 }
 
 # Install Redis
-wget http://download.redis.io/releases/redis-2.2.0.tar.gz
+wget https://github.com/antirez/redis/archive/2.8.22.tar.gz
 tar xvzf redis-2.2.0.tar.gz
 cd redis-2.2.0
 make 
