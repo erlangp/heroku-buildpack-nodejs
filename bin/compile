@@ -230,7 +230,10 @@ summarize_build() {
   mmeasure 'modules.size' "$(measure_size)"
 }
 
-# -------------------------------------------------------
+# ---------------------------------------------------------------------------
+# https://github.com/getsentry/heroku-buildpack-redis/blob/master/bin/compile
+# 
+
 indent() {
   sed -u 's/^/       /'
 }
@@ -275,7 +278,7 @@ fi
 set-env PATH '/app/.heroku/vendor/redis/bin:$PATH'
 
 echo "Done" | indent
-# -------------------------------------------------------
+# ---------------------------------------------------------------------------
 
 # Busybox
 cd $BUILD_DIR
